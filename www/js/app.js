@@ -58,6 +58,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'veg.items', 'veg.ord
       }
     }
   })
+  .state('app.addMenu', {
+     url: "/addMenu",
+     views: {
+       'menuContent': {
+         templateUrl: "templates/addMenu.html"
+       }
+     }
+   })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/veg');
